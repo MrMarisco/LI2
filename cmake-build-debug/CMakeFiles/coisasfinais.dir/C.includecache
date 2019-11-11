@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marco/Desktop/trabalho/estado.c
+stdio.h
+-
+estado.h
+/home/marco/Desktop/trabalho/estado.h
+ctype.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/marco/Desktop/trabalho/estado.h
+
