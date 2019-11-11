@@ -1,0 +1,530 @@
+\hypertarget{estado_8c}{}\section{/home/joaogomes158/\+Desktop/trabalho/estado.c File Reference}
+\label{estado_8c}\index{/home/joaogomes158/\+Desktop/trabalho/estado.\+c@{/home/joaogomes158/\+Desktop/trabalho/estado.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for estado.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{estado_8c_a77bf256cab0c1688dd4b8c0d361deed9}{printa\+Comandos} ()
+\begin{DoxyCompactList}\small\item\em Imprime menu com comandos no ecrã \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} \hyperlink{estado_8c_adee393091c3ce4c5948b0e9e0747e5b5}{troca} (\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} c)
+\begin{DoxyCompactList}\small\item\em Troca o valor da peça. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8c_a87aa3183cc81202597e561ca60bc802d}{printa} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Imprime o tabuleiro de um estado. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8c_a989e9e07169758bcfa132bce9c9e119b}{existe} (int i, int v \mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifica se um número existe num array. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8c_a07e574b5618e248e79829190ea57e005}{dentro} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Verifica se uma certa posição pertence ao tabuleiro 8x8. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8c_ad4052904bab5f4edae4052bcb0afe29e}{dispersa} (int i, int j, int a \mbox{[}8\mbox{]}, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em coloca 2 nas posições do array se naquela direção existe uma peça do mesmo tipo e peças opostas entre elas. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8c_a58cef57aab9de25a3e6bcda9cf6baf6a}{array} (int i, int j, int a \mbox{[}8\mbox{]}, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Coloca 1 nas diferentes posições do array se a mesma pertence ao tabuleiro e contém uma peça adversária. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8c_afd3314aa01dcc092566d6f1e395b1543}{epossivel} (int i, int j, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Verifica se uma jogada é possivel num certo estado. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8c_a095059159939a2e94efc19f4f7c66d48}{printa\+Possiveis} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Imprime tabuleiro com \textquotesingle{}+\textquotesingle{} nas posições onde a jogada é possível. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8c_afb5a1926418ed7509d871376503a20d0}{altera\+Tabuleiro} (int i, int j, int a \mbox{[}8\mbox{]}, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Altera o Tabuleiro de acordo com a jogada feita nas coordenadas (i,j). \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8c_afc002b5ed4a6a9b47c55766c1797b273}{inserir} (int i, int j, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\item 
+char \hyperlink{estado_8c_ae12adb643120b0453e9d6e5737d9ef3b}{score} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Imprime a pontuação de cada jogador e indica o vencedor no estado de jogo. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8c_a83802acde247e49df725cb4411f6bdf7}{new} ()
+\begin{DoxyCompactList}\small\item\em Reseta o estado preenchendo apenas as posições centrais. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8c_ae45dac5dda67dda95e22b9da730f1fbb}{abrir} (int dificuldade, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, \hyperlink{estado_8h_ae7a84d383fd67bed3825abe36c45f5de}{H\+I\+ST} $\ast$$\ast$h, char $\ast$comando)
+\begin{DoxyCompactList}\small\item\em Abre um ficheiro e lê o estado e a dificuldade do bot nele contido. \end{DoxyCompactList}\item 
+char \hyperlink{estado_8c_a665e704fc0b53fd4b2291b3eccb8eed8}{caracter} (\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} v)
+\begin{DoxyCompactList}\small\item\em Converte o valor da peça num carácter. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8c_a2db8ca14772d0abdf4ade65d39d25222}{guarda} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, \hyperlink{estado_8h_ae7a84d383fd67bed3825abe36c45f5de}{H\+I\+ST} $\ast$$\ast$h, int dificuldade, char $\ast$comando)
+\begin{DoxyCompactList}\small\item\em Abre um ficheiro e guarda o estado atual e a dificuldade do bot no mesmo. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8c_add63ee339ba927d72aa5af72d2ba181b}{temgravado} (char $\ast$comando)
+\begin{DoxyCompactList}\small\item\em Verifica se o ficheiro existe. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8c_aaa2b23770bed7b077346952bde7bbf1e}{nao\+Ha\+Jogadas\+Validas} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Verifica a existencia de jogadas válidas. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8c_a1b7462433983ef8d1f1d9e610e41fcb0}{printa\+Sugestao} (int x, int y, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Imprime tabuleiro com a sugestão de jogada. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8c_a143e394ccaa9a135a777b4f489604b24}{conta} (\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} v, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Conta a diferença de peças entre v e a peça oposta. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8c_a02a6ed7112320fa5bb113e33e30cb93d}{max\+Min} (int s \mbox{[}$\,$\mbox{]}, int n, int max\+O\+Umin)
+\begin{DoxyCompactList}\small\item\em Calcula o indice do maximo ou minimo de um array. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8c_a749e2cd554e51618760575866a047e3d}{auxbotsugestao} (\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} v, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, int n, int max\+O\+Umin)
+\begin{DoxyCompactList}\small\item\em Na arvore do algoritmo Max\+Min,devolve o inteiro representante daquele ramo. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a8de0a779e79818ed3ec5badb60e2b6f3}{J\+O\+G\+A\+DA} \hyperlink{estado_8c_afec115affc9c4450ec6a6ade4cfdae87}{botsugestao} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, int profundidade)
+\begin{DoxyCompactList}\small\item\em Calcula a melhor jogada para o bot realizar segundo o algoritmo Min\+Max. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8c_a43361bae90336d4b245f1560ddddd16d}{joga\+Manual} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, \hyperlink{estado_8h_ae7a84d383fd67bed3825abe36c45f5de}{H\+I\+ST} $\ast$$\ast$h, int dificuldade)
+\begin{DoxyCompactList}\small\item\em Efetua todos os comandos. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8c_a3dcfb56f137f552136e26e23cf467e80}{joga} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, \hyperlink{estado_8h_ae7a84d383fd67bed3825abe36c45f5de}{H\+I\+ST} $\ast$$\ast$h, int dificuldade)
+\begin{DoxyCompactList}\small\item\em Chama a função joga\+Manual se estiver no modo manual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{estado_8c_ae45dac5dda67dda95e22b9da730f1fbb}\label{estado_8c_ae45dac5dda67dda95e22b9da730f1fbb}} 
+\index{estado.\+c@{estado.\+c}!abrir@{abrir}}
+\index{abrir@{abrir}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{abrir()}{abrir()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} abrir (\begin{DoxyParamCaption}\item[{int}]{dificuldade,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{\hyperlink{estado_8h_ae7a84d383fd67bed3825abe36c45f5de}{H\+I\+ST} $\ast$$\ast$}]{h,  }\item[{char $\ast$}]{comando }\end{DoxyParamCaption})}
+
+
+
+Abre um ficheiro e lê o estado e a dificuldade do bot nele contido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dificuldade} & Dificuldade do bot \\
+\hline
+{\em e} & Estado \\
+\hline
+{\em h} & Histórico \\
+\hline
+{\em comando} & Comando com o nome do ficheiro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve o estado presente no ficheiro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_afb5a1926418ed7509d871376503a20d0}\label{estado_8c_afb5a1926418ed7509d871376503a20d0}} 
+\index{estado.\+c@{estado.\+c}!altera\+Tabuleiro@{altera\+Tabuleiro}}
+\index{altera\+Tabuleiro@{altera\+Tabuleiro}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{altera\+Tabuleiro()}{alteraTabuleiro()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} altera\+Tabuleiro (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{a\mbox{[}8\mbox{]},  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Altera o Tabuleiro de acordo com a jogada feita nas coordenadas (i,j). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Primeira coordenada \\
+\hline
+{\em j} & Segunda coordenada \\
+\hline
+{\em a} & Array das posições a volta \\
+\hline
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve o estado resultante. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_a58cef57aab9de25a3e6bcda9cf6baf6a}\label{estado_8c_a58cef57aab9de25a3e6bcda9cf6baf6a}} 
+\index{estado.\+c@{estado.\+c}!array@{array}}
+\index{array@{array}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{array()}{array()}}
+{\footnotesize\ttfamily void array (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{a\mbox{[}8\mbox{]},  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Coloca 1 nas diferentes posições do array se a mesma pertence ao tabuleiro e contém uma peça adversária. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Primeira coordenada \\
+\hline
+{\em j} & Segunda coordenada \\
+\hline
+{\em a} & Array das posições em volta \\
+\hline
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8c_a749e2cd554e51618760575866a047e3d}\label{estado_8c_a749e2cd554e51618760575866a047e3d}} 
+\index{estado.\+c@{estado.\+c}!auxbotsugestao@{auxbotsugestao}}
+\index{auxbotsugestao@{auxbotsugestao}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{auxbotsugestao()}{auxbotsugestao()}}
+{\footnotesize\ttfamily int auxbotsugestao (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR}}]{v,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{n,  }\item[{int}]{max\+O\+Umin }\end{DoxyParamCaption})}
+
+
+
+Na arvore do algoritmo Max\+Min,devolve o inteiro representante daquele ramo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Peca com qual o bot quer jogar. \\
+\hline
+{\em e} & Estado atual. \\
+\hline
+{\em n} & profundidade da arvore representante do algoritmo Min\+Max, será 0 nas folhas da arvore. \\
+\hline
+{\em max\+O\+Umin} & simular a vez do bot a jogar deve-\/se maximizar (1),contrário minimizar (0). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve o inteiro representante do ramo da arvore Min\+Max. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_afec115affc9c4450ec6a6ade4cfdae87}\label{estado_8c_afec115affc9c4450ec6a6ade4cfdae87}} 
+\index{estado.\+c@{estado.\+c}!botsugestao@{botsugestao}}
+\index{botsugestao@{botsugestao}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{botsugestao()}{botsugestao()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a8de0a779e79818ed3ec5badb60e2b6f3}{J\+O\+G\+A\+DA} botsugestao (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{profundidade }\end{DoxyParamCaption})}
+
+
+
+Calcula a melhor jogada para o bot realizar segundo o algoritmo Min\+Max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado no qual se quer realizar a jogada. \\
+\hline
+{\em profundidade,ou} & seja,quantas jogadas no futuro se quer simular. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve a Jogada sugerida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_a665e704fc0b53fd4b2291b3eccb8eed8}\label{estado_8c_a665e704fc0b53fd4b2291b3eccb8eed8}} 
+\index{estado.\+c@{estado.\+c}!caracter@{caracter}}
+\index{caracter@{caracter}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{caracter()}{caracter()}}
+{\footnotesize\ttfamily char caracter (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR}}]{v }\end{DoxyParamCaption})}
+
+
+
+Converte o valor da peça num carácter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Valor da peça \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve o carácter que corresponde à peça 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_a143e394ccaa9a135a777b4f489604b24}\label{estado_8c_a143e394ccaa9a135a777b4f489604b24}} 
+\index{estado.\+c@{estado.\+c}!conta@{conta}}
+\index{conta@{conta}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{conta()}{conta()}}
+{\footnotesize\ttfamily int conta (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR}}]{v,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Conta a diferença de peças entre v e a peça oposta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Valor da peça \\
+\hline
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve a diferença entre as duas peças 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_a07e574b5618e248e79829190ea57e005}\label{estado_8c_a07e574b5618e248e79829190ea57e005}} 
+\index{estado.\+c@{estado.\+c}!dentro@{dentro}}
+\index{dentro@{dentro}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{dentro()}{dentro()}}
+{\footnotesize\ttfamily int dentro (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Verifica se uma certa posição pertence ao tabuleiro 8x8. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Primeira coordenada \\
+\hline
+{\em j} & Segunda coordenada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve 1 se existe e 0 se nao existe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_ad4052904bab5f4edae4052bcb0afe29e}\label{estado_8c_ad4052904bab5f4edae4052bcb0afe29e}} 
+\index{estado.\+c@{estado.\+c}!dispersa@{dispersa}}
+\index{dispersa@{dispersa}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{dispersa()}{dispersa()}}
+{\footnotesize\ttfamily void dispersa (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{a\mbox{[}8\mbox{]},  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+coloca 2 nas posições do array se naquela direção existe uma peça do mesmo tipo e peças opostas entre elas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Primeira Coordenada \\
+\hline
+{\em j} & Segunda Ordenada \\
+\hline
+{\em a} & Array das posições a volta \\
+\hline
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8c_afd3314aa01dcc092566d6f1e395b1543}\label{estado_8c_afd3314aa01dcc092566d6f1e395b1543}} 
+\index{estado.\+c@{estado.\+c}!epossivel@{epossivel}}
+\index{epossivel@{epossivel}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{epossivel()}{epossivel()}}
+{\footnotesize\ttfamily int epossivel (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Verifica se uma jogada é possivel num certo estado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Primeira coordenada \\
+\hline
+{\em j} & Segunda coordenada \\
+\hline
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve 1 se é possivel e 0 se nao é possivel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_a989e9e07169758bcfa132bce9c9e119b}\label{estado_8c_a989e9e07169758bcfa132bce9c9e119b}} 
+\index{estado.\+c@{estado.\+c}!existe@{existe}}
+\index{existe@{existe}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{existe()}{existe()}}
+{\footnotesize\ttfamily int existe (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{v\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Verifica se um número existe num array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Número \\
+\hline
+{\em v} & Array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve 1 se existe e 0 se nao existe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_a2db8ca14772d0abdf4ade65d39d25222}\label{estado_8c_a2db8ca14772d0abdf4ade65d39d25222}} 
+\index{estado.\+c@{estado.\+c}!guarda@{guarda}}
+\index{guarda@{guarda}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{guarda()}{guarda()}}
+{\footnotesize\ttfamily void guarda (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{\hyperlink{estado_8h_ae7a84d383fd67bed3825abe36c45f5de}{H\+I\+ST} $\ast$$\ast$}]{h,  }\item[{int}]{dificuldade,  }\item[{char $\ast$}]{comando }\end{DoxyParamCaption})}
+
+
+
+Abre um ficheiro e guarda o estado atual e a dificuldade do bot no mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado \\
+\hline
+{\em h} & Histórico \\
+\hline
+{\em dificuldade} & Dificuldade do bot \\
+\hline
+{\em comando} & Comando com o nome do ficheiro \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8c_afc002b5ed4a6a9b47c55766c1797b273}\label{estado_8c_afc002b5ed4a6a9b47c55766c1797b273}} 
+\index{estado.\+c@{estado.\+c}!inserir@{inserir}}
+\index{inserir@{inserir}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{inserir()}{inserir()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} inserir (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{estado_8c_a3dcfb56f137f552136e26e23cf467e80}\label{estado_8c_a3dcfb56f137f552136e26e23cf467e80}} 
+\index{estado.\+c@{estado.\+c}!joga@{joga}}
+\index{joga@{joga}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{joga()}{joga()}}
+{\footnotesize\ttfamily void joga (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{\hyperlink{estado_8h_ae7a84d383fd67bed3825abe36c45f5de}{H\+I\+ST} $\ast$$\ast$}]{h,  }\item[{int}]{dificuldade }\end{DoxyParamCaption})}
+
+
+
+Chama a função joga\+Manual se estiver no modo manual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado \\
+\hline
+{\em h} & Historico \\
+\hline
+{\em dificuldade} & Dificuldade do bot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8c_a43361bae90336d4b245f1560ddddd16d}\label{estado_8c_a43361bae90336d4b245f1560ddddd16d}} 
+\index{estado.\+c@{estado.\+c}!joga\+Manual@{joga\+Manual}}
+\index{joga\+Manual@{joga\+Manual}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{joga\+Manual()}{jogaManual()}}
+{\footnotesize\ttfamily void joga\+Manual (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{\hyperlink{estado_8h_ae7a84d383fd67bed3825abe36c45f5de}{H\+I\+ST} $\ast$$\ast$}]{h,  }\item[{int}]{dificuldade }\end{DoxyParamCaption})}
+
+
+
+Efetua todos os comandos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado \\
+\hline
+{\em h} & Histórico \\
+\hline
+{\em dificuldade} & Dificuldade do bot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8c_a02a6ed7112320fa5bb113e33e30cb93d}\label{estado_8c_a02a6ed7112320fa5bb113e33e30cb93d}} 
+\index{estado.\+c@{estado.\+c}!max\+Min@{max\+Min}}
+\index{max\+Min@{max\+Min}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{max\+Min()}{maxMin()}}
+{\footnotesize\ttfamily int max\+Min (\begin{DoxyParamCaption}\item[{int}]{s\mbox{[}$\,$\mbox{]},  }\item[{int}]{n,  }\item[{int}]{max\+O\+Umin }\end{DoxyParamCaption})}
+
+
+
+Calcula o indice do maximo ou minimo de um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para um array de inteiros \\
+\hline
+{\em n} & Numero de inteiros pertencentes ao array \\
+\hline
+{\em max\+O\+Umin} & Inteiro,1 se quiser calcular o indice do maximo do array,0 o minimo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve o indice do maximo ou minimo de um array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_aaa2b23770bed7b077346952bde7bbf1e}\label{estado_8c_aaa2b23770bed7b077346952bde7bbf1e}} 
+\index{estado.\+c@{estado.\+c}!nao\+Ha\+Jogadas\+Validas@{nao\+Ha\+Jogadas\+Validas}}
+\index{nao\+Ha\+Jogadas\+Validas@{nao\+Ha\+Jogadas\+Validas}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{nao\+Ha\+Jogadas\+Validas()}{naoHaJogadasValidas()}}
+{\footnotesize\ttfamily int nao\+Ha\+Jogadas\+Validas (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Verifica a existencia de jogadas válidas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve 0 se existe jogada para a peça atual,1 se não existe para a peça atual mas existe para a peça oposta,2 se não existe para a peça atual nem para a peça oposta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_a83802acde247e49df725cb4411f6bdf7}\label{estado_8c_a83802acde247e49df725cb4411f6bdf7}} 
+\index{estado.\+c@{estado.\+c}!new@{new}}
+\index{new@{new}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{new()}{new()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} new (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reseta o estado preenchendo apenas as posições centrais. 
+
+\begin{DoxyReturn}{Returns}
+Devolve o estado do início de jogo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_a87aa3183cc81202597e561ca60bc802d}\label{estado_8c_a87aa3183cc81202597e561ca60bc802d}} 
+\index{estado.\+c@{estado.\+c}!printa@{printa}}
+\index{printa@{printa}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{printa()}{printa()}}
+{\footnotesize\ttfamily void printa (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Imprime o tabuleiro de um estado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado a ser imprimido \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8c_a77bf256cab0c1688dd4b8c0d361deed9}\label{estado_8c_a77bf256cab0c1688dd4b8c0d361deed9}} 
+\index{estado.\+c@{estado.\+c}!printa\+Comandos@{printa\+Comandos}}
+\index{printa\+Comandos@{printa\+Comandos}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{printa\+Comandos()}{printaComandos()}}
+{\footnotesize\ttfamily void printa\+Comandos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprime menu com comandos no ecrã 
+
+\mbox{\Hypertarget{estado_8c_a095059159939a2e94efc19f4f7c66d48}\label{estado_8c_a095059159939a2e94efc19f4f7c66d48}} 
+\index{estado.\+c@{estado.\+c}!printa\+Possiveis@{printa\+Possiveis}}
+\index{printa\+Possiveis@{printa\+Possiveis}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{printa\+Possiveis()}{printaPossiveis()}}
+{\footnotesize\ttfamily void printa\+Possiveis (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Imprime tabuleiro com \textquotesingle{}+\textquotesingle{} nas posições onde a jogada é possível. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8c_a1b7462433983ef8d1f1d9e610e41fcb0}\label{estado_8c_a1b7462433983ef8d1f1d9e610e41fcb0}} 
+\index{estado.\+c@{estado.\+c}!printa\+Sugestao@{printa\+Sugestao}}
+\index{printa\+Sugestao@{printa\+Sugestao}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{printa\+Sugestao()}{printaSugestao()}}
+{\footnotesize\ttfamily void printa\+Sugestao (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Imprime tabuleiro com a sugestão de jogada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Primeira coordenada \\
+\hline
+{\em y} & Segunda coordenada \\
+\hline
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8c_ae12adb643120b0453e9d6e5737d9ef3b}\label{estado_8c_ae12adb643120b0453e9d6e5737d9ef3b}} 
+\index{estado.\+c@{estado.\+c}!score@{score}}
+\index{score@{score}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{score()}{score()}}
+{\footnotesize\ttfamily char score (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Imprime a pontuação de cada jogador e indica o vencedor no estado de jogo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve o carácter da peça do jogador que ganhou 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_add63ee339ba927d72aa5af72d2ba181b}\label{estado_8c_add63ee339ba927d72aa5af72d2ba181b}} 
+\index{estado.\+c@{estado.\+c}!temgravado@{temgravado}}
+\index{temgravado@{temgravado}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{temgravado()}{temgravado()}}
+{\footnotesize\ttfamily int temgravado (\begin{DoxyParamCaption}\item[{char $\ast$}]{comando }\end{DoxyParamCaption})}
+
+
+
+Verifica se o ficheiro existe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comando} & Comando com o nome do ficheiro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve 1 se existe e 0 se não existe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8c_adee393091c3ce4c5948b0e9e0747e5b5}\label{estado_8c_adee393091c3ce4c5948b0e9e0747e5b5}} 
+\index{estado.\+c@{estado.\+c}!troca@{troca}}
+\index{troca@{troca}!estado.\+c@{estado.\+c}}
+\subsubsection{\texorpdfstring{troca()}{troca()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} troca (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR}}]{c }\end{DoxyParamCaption})}
+
+
+
+Troca o valor da peça. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Peça a trocar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve peça trocada 
+\end{DoxyReturn}
